@@ -1,0 +1,16 @@
+Package: datacleaner
+Title: Simple tools for cleaning and checking dataframes
+Version: 0.0.0.9000
+Authors@R: person("Jinte", "van den Brink", email = "jintevdbrink@gmail.com",
+  role = c("aut", "cre"))
+Description: A package for cleaning datasets, including removing missing values, duplicates, and generating data quality reports.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Imports:
+    dplyr,
+    tidyr
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr
