@@ -6,7 +6,7 @@
 #' @return A cleaned dataframe without missing values
 #' @export
 
-remove_na_rows <- function(data) {
+remove_na <- function(data) {
   if (!is.data.frame(data)) {
     stop("Input must be a data.frame")
   }

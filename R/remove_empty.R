@@ -6,7 +6,7 @@
 #' @return A dataframe without empty columns
 #' @export
 
-remove_empty_columns <- function(data) {
+remove_empty <- function(data) {
 
   if (!is.data.frame(data)) {
     stop("Input must be a data.frame")

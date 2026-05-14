@@ -7,7 +7,7 @@
 #' @return A list containing data quality information
 #' @export
 
-data_quality_report <- function(data) {
+data_quality <- function(data) {
 
   if (!is.data.frame(data)) {
     stop("Input must be a data.frame")

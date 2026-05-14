@@ -1,0 +1,51 @@
+---
+title: "datacleaner_intro"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{datacleaner_intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(datacleaner)
+```
+#Introduction
+
+The datacleaner package provides simple tools for cleaning and checking data frames in R.
+It helps you quickly remove missing values, duplicates, empty columns, and generate a data quality report.
+
+This vignette shows how to use all functions in the package
+##1. Data Quality Report
+
+The data_quality() function gives an overview of your dataset, including missing values and duplicate rows.
+```{r}
+data_quality(mtcars)
+```
+##2. Remove Duplicate Rows
+
+The remove_duplicates() function removes duplicate rows from a dataset.
+
+```{r}
+remove_duplicates(mtcars)
+```
+##3. Remove Rows with Missing Values
+
+The remove_na() function removes rows that contain NA values.
+```{r}
+remove_na(mtcars)
+```
+##4. Remove Empty Columns
+
+The remove_empty() function removes columns that contain only missing values.
+```{r}
+remove_empty(mtcars)
+```
+
